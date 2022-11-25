@@ -26,7 +26,7 @@
                     <a class="nav-link" href="nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="clientes.html">clientes</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="destinos.html">Destinos</a>
@@ -38,6 +38,41 @@
         </nav>
         <!-- Nav bar fin -->
     </header> 
+    <!-- call formulario inicia-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="nleft col-sm-6">
+          <h4>¡Ponete en contacto!</h4>
+          <p>Proveemos un <strong>servicio de atencion </strong> al cliente mediante Email y Whatsapp. De lunes a viernes el <strong> horario de atencion </strong> es de 10 am a 18 pm y los fines de semana es de 10 am a 14pm.</p>
+          <a href="destinos.html"><button type="button" class="btn btn-dark">Mira los destinos</button>
+        </div></a>
+        <div class="cright col-sm-6"></div>
+      </div>
+     </div>
+    <!-- call formulario fin-->
+    <!-- formulario inicia -->
+    <main class="main_contactos" id="main_contactos">
+      <div class="form">    
+      <h3>formulario</h3>
+      </main>
+          <form class="formulario" action="enviar.php" method="post" enctype="text/plain" netlify>
+              <label for="names">Nombre y Apellido</label>
+              <input id="names" name="names" type="text" placeholder="Nombre y apellido" required>
+              <br>
+              <label for="Agencia">Agencia</label>
+              <input id="Agencia" name="Agencia" type="text" placeholder="El nombre de tu agencia" required>
+              <br>
+              <label for="Correo">Correo</label>
+              <input id="Correo" name="Correo" type="email" placeholder="Tu correo electronico" required>
+              <br>
+              <label for="comentarios">Comentarios</label><br>
+              <textarea name="comentarios" id="comentarios" cols="30" rows="5" resize="none"
+              placeholder="Mandanos tu consulta" required></textarea>
+              <br>
+              <input type="submit">           
+          </form>
+          </div>
+    <!-- formulario fin -->
  <!-- footer inicia -->
  <footer>
   <p>todos los derechos reservados por copyright</p>

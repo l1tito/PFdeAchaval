@@ -3,15 +3,15 @@
     margin: 0;
     padding: 0;
     }
-
+/* Navbar */
 .navbar{
     background-color: #333;
     font-family: 'Roboto Condensed', sans-serif;
 }
-
+/* Call index */
 .call{
     background-color: aliceblue;
-    background-image: linear-gradient(rgb(74, 74, 74, 0.3), rgb(0, 0, 0, 0.3)), url(img/ski\ banner.jpg);   
+    background-image: linear-gradient(rgb(74, 74, 74, 0.1), rgb(0, 0, 0, 0.1)), url(img/ski\ banner.jpg);   
     background-size: cover ;
     height: 550px;
     background-position: center;
@@ -26,12 +26,19 @@ h3{
     color: white;
     text-shadow: white 0 0 2px;
     font-size: 26px;
-    margin: 0;
+    margin: 10px;
+    width: 100%;
     
 }
+/* seccion promocion */
 .promo{
     text-align: center;
 }
+.promo:hover{
+    transform: scale(2);
+    
+}
+/* seccion nosotros */
 .nleft{
     padding: 20px;
 }
@@ -49,14 +56,20 @@ h3{
 .nright{
     height: 450px;
     background-image: url(img/workspace.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 
 }
+/* seccion destinos populares */
 .desp{
     height: 300px;
-    border: 2px solid #333;
     text-align: center;
+    box-shadow: 10px 5px 5px #222;
+    padding: 20px;
+    border-radius: 20%;
+}
+.desp:hover{
+    transform: scale(0.8);
 }
 .desp h4{
     text-align: center;
@@ -71,6 +84,109 @@ h3{
     color: #333;
     text-shadow: 0 0 1px #333;
 }
+.galdes{
+    margin-top: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.galtext{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 3px #000;  
+}
+/* servicios html */
+.ser{
+    height: 300px;
+    border-radius: 20%;
+    box-shadow: 10px 5px 5px #222;
+    padding: 20px
+}
+.ser:hover{
+    transform: scale(0.8);
+}
+.ser h4{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.seri{
+    font-size: 50px;
+    text-align: center;
+    padding-left: 40px;
+    align-items: baseline;
+}
+.ser p::first-letter{
+    font-size: 25px;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
+.calls{
+    height: 80%;
+    border: 2px solid #000;
+    justify-content: center;
+}
+.calls h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 60px;
+}
+.calls p{
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 20px; 
+}
+.callbk{
+    background-image: url(img/sercall.jpg);
+    background-size: cover;
+}
+.callsm{
+    background-color: rgb(34, 34, 34,0.7);
+    
+}
+.btcall{
+    align-content: center;
+}
+/* Contacto html */
+.cright{
+    height: 450px;
+    background-image: url(img/contact.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.formulario{
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.5px;
+    background-color: #222;
+    padding: 20px;
+    border: groove 3px #fff;  
+    text-align: left;
+    width: auto;
+    align-content: center;
+}
+/* Nosotros html */
+.nosimg{
+    height: 450px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    border-radius: 20%;
+    box-shadow: 10px 5px 5px #222;
+}
+.nosimg h5{
+    text-align: center;
+}
+.nosimg img{
+    height: 120px;  
+}
+.nosimg p{
+    font-size: 14px;
+    padding: 5px;
+}
+/* footer */
 footer{
     height: auto;
     width: 100%;
@@ -80,8 +196,9 @@ footer{
     background-color: #333;
     color: white;
     padding: 5px;
-   
+    margin-top: 20px;
 }
+
 footer a{
     color: white;
 }
@@ -89,6 +206,7 @@ footer i{
     letter-spacing: 10px;   
     font-size: 35   px;
 }
+/* Whatsapp Caller */
 .what{
     height: 60px;
     width: 60px;
@@ -107,6 +225,8 @@ footer i{
   
      
 }
+
+/* media & resposive */
 @media only screen and (max-width: 425px){
     .navbar{
         font-size: 14px;
@@ -116,4 +236,12 @@ footer i{
     .navbar{
         font-size: 10px;
     }
+    .seri{
+        padding-left: 110px;
+    }
 }
+@media only screen and (max-width: 768px){
+    .nosimg p{
+        font-size: 13px;    
+    }
+}    
